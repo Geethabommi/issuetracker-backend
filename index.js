@@ -1,11 +1,12 @@
 //expressjs is used
 
 const express = require('express');
-
+const mongoose = require('./config/mongoose');
 const routes = require('./routes/index');
 
 const app = express();
 
+app.use(express.urlencoded());
 app.use('/', routes);
 
 // app.get('/home', (req, res) => {
@@ -13,7 +14,7 @@ app.use('/', routes);
 //   res.end('its express');
 // });
 
-app.listen(8000, (err) => {
+app.listen(8001, (err) => {
   if (err) {
     console.log('server is not running', err);
     return;
@@ -23,7 +24,7 @@ app.listen(8000, (err) => {
 
 /* The below code is for server creation and request listen and response
 This will work with node alone without any package
-but expressjs is used in the above code for easy usage and directory and framework structure
+but expressjs is used in the above code for easy usage,modular &scalable code and directory and framework structure
 
 var http = require("http");
 
