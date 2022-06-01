@@ -1,0 +1,46 @@
+#layout-header {
+  width: 100%;
+  top: 1px;
+  position: absolute;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    background: #53a1ce;
+    color: white;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+
+    .mini-logo {
+      //   p {
+      //     margin: 5px;
+      //     font-size: 1.4rem;
+      //     font-weight: bold;
+      //   }
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      a {
+        font-size: 17px;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+
+    .auth-links {
+      ul {
+        margin: 5% 5px;
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

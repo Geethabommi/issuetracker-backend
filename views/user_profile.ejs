@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/user_profile.css" />
+<div class="reset-container">
+  <div class="form-container reset-form-container">
+    <form action="/users/update/<%= locals.user.id %>" method="POST">
+      <h2>Profile</h2>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        value="<%= locals.user.name %>"
+        disabled
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        value="<%= locals.user.email %>"
+        disabled
+      />
+      <!-- <input type="submit" value="Update" /> -->
+    </form>
+  </div>
+</div>
